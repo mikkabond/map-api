@@ -3,11 +3,12 @@
 }
 body {
   padding: 0 10% 0 10%;
+  min-width: 800px;
 }
 
 .top-block {
   margin-bottom: 3em;
-  min-width: 800px;
+  min-width: 720px;
 }
 
 header {
@@ -16,11 +17,11 @@ header {
 
 .map-wrapper {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  justify-content: left;
+  flex-flow: row wrap;
   align-items: flex-start;
   align-content: flex-start;
-  height: 600px;
+  /* height: 600px; */
   border: 1px solid rgba(22, 109, 248, 0.5);
   box-shadow: 0 0 20px 10px rgba(22, 109, 248, 0.4);
   border-radius: 1em;
@@ -33,14 +34,24 @@ header {
   border-radius: 1em;
   border: 1px solid rgba(22, 109, 248, 0.5);
   box-shadow: 0 0 10px 5px rgba(22, 109, 248, 0.4);
+  flex: 1 100%;
 }
 
 .map-form {
   padding: 1em;
-  flex: 4 0 auto;
+  align-self: flex-start;
 }
 
 .map-canvas {
-  flex: 3 0 auto;
-  align-self: stretch;
+  height: 600px;
+}
+
+@media all and (min-width: 800px) {
+  .map-form {
+    flex: 4 0 0;
+  }
+
+  .map-canvas {
+    flex: 3 0 0;
+  }
 }
