@@ -3,12 +3,12 @@
 }
 body {
   padding: 0 10% 0 10%;
-  min-width: 800px;
+  min-width: 300px;
 }
 
 .top-block {
   margin-bottom: 3em;
-  min-width: 720px;
+  min-width: 240px;
 }
 
 header {
@@ -43,7 +43,7 @@ header {
 }
 
 .map-canvas {
-  height: 600px;
+  min-height: 300px;
 }
 
 @media all and (min-width: 800px) {
@@ -53,5 +53,6 @@ header {
 
   .map-canvas {
     flex: 3 0 0;
+    height: 400px;
   }
 }
