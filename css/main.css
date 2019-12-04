@@ -1,3 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0 10% 0 10%;
+}
+
+.top-block {
+  margin-bottom: 3em;
+  min-width: 800px;
+}
+
 header {
   text-align: center;
+}
+
+.map-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 600px;
+  border: 1px solid rgba(22, 109, 248, 0.5);
+  box-shadow: 0 0 20px 10px rgba(22, 109, 248, 0.4);
+  border-radius: 1em;
+  margin-bottom: 3em;
+  padding: 1em;
+}
+
+.map-wrapper > * {
+  margin: 1em;
+  border-radius: 1em;
+  border: 1px solid rgba(22, 109, 248, 0.5);
+  box-shadow: 0 0 10px 5px rgba(22, 109, 248, 0.4);
+}
+
+.map-form {
+  padding: 1em;
+  flex: 4 0 auto;
+  height: 50%;
+}
+
+.map-canvas {
+  flex: 3 0 auto;
+  align-self: stretch;
 }
