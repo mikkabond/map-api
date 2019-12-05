@@ -18,12 +18,12 @@
     <main class="top-block">
       <div class="map-wrapper">
         <form class="map-form" action=""></form>
-        <div class="map-canvas">
+        <div class="map-canvas" id="google-map-canvas">
         <script>
           var map;
           function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -34.397, lng: 150.644},
+            map = new google.maps.Map(document.getElementById('google-map-canvas'), {
+            center: {lat: 59.933383, lng: 30.331285}, 
             zoom: 8
             });
           }
